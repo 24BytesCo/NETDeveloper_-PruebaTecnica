@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>NETDeveloper__PruebaTecnica.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NETDeveloper_ PruebaTecnica.Domain\NETDeveloper_ PruebaTecnica.Domain.csproj" />
+    <ProjectReference Include="..\NETDeveloper_ PruebaTecnica.Persistence\NETDeveloper_ PruebaTecnica.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Personas\Commands\" />
+    <Folder Include="Features\Personas\Queries\" />
+    <Folder Include="Features\Usuarios\Commands\" />
+  </ItemGroup>
+
+</Project>
